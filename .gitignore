@@ -6,5 +6,6 @@ application/cache/*
 
 application/logs/*
 !application/logs/index.html
-!application/logs/.htaccess.project
+!application/logs/.htaccess
+.project
 .travis.yml
