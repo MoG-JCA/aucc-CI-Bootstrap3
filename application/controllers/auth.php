@@ -10,6 +10,6 @@ class Auth extends CI_Controller {
 		$this->load->view('footer');
 	}
 	function authentication(){
-		echo "인증";
+		
 	}
 }
