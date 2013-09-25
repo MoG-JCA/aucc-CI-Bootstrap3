@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->    
-		<link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="/static/lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
 		<div class="navbar">
@@ -34,8 +34,8 @@
 				</div>
 		  </div>
 	</div>
-	<script src="http://code.jquery.com/jquery.js"></script>    
-	<script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>   
+	<script src="/static/lib/bootstrap/js/bootstrap.js"></script>
 	</body>
 </html>			  
 				  			
