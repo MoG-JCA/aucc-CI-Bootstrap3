@@ -16,6 +16,17 @@
                 <link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">             
             </head>
             <body>
+            	<?php
+            		if($this->session->flashdata('message')){
+            	?>
+            	
+            	<script>
+            		alert("<?=$this->session->flashdata('message')?>");
+            	</script>
+            	<?php
+            	}
+            	//	var_dump($this->session->flashdata('message'));
+            	?>
                 <div class="navbar navbar-fixed-top">
                   <div class="navbar-inner">
                     <div class="container">
@@ -32,7 +43,20 @@
                   
                       <!-- Everything you want hidden at 940px or less, place within here -->
                       <div class="nav-collapse collapse">
-                        <!-- .nav, .navbar-search, .navbar-form, etc -->
+                        <ul class="nav pull-right">
+                        	<?php
+                        	if($this->session->userdata('is_login')){
+                        	?>
+                        		<li><a href="/index.php/auth/logout">로그아웃</a></li>
+                        	<?php
+							} else {
+							?>
+                        		<li><a href="/index.php/auth/login">로그인</a></li>
+                        		<li><a href="/index.php/auth/register">회원가입</a></li>
+                        	<?php
+							}
+							?>
+                        </ul>
                       </div>
                   
                     </div>
